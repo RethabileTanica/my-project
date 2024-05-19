@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Man City</title>
+    <style>
+      .body {
+        display: block;
+        margin: 0 auto;
+        background: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
+        border-radius: 20px;
+        padding: 10px;
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        color: #98c5e9;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border: 10px;
+        width: 50%;
+      }
+      p {
+        display: block;
+        margin: 0 auto;
+        line-height: 1.5;
+        font-size: 15px;
+        max-width: 900px;
+      }
+      a {
+        text-decoration: none;
+        color: #98c5e9;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 5px auto;
+        border: 1px solid #98c5e9;
+        background: #98c5e9;
+        color: white;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 15px 50px;
+        border-radius: 20px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #0f416a;
+        color: white;
+        border: 1px solid #0f416a;
+      }
+      .club {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 5px;
+      }
+      .buy {
+        margin: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <h1>Favoutite Soccer Club</h1>
+      <h2>Manchester City</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/121/146/original/mancity.png?1711796895"
+        width="200"
+      />
+      <p>
+        Manchester City Football Club is a professional football club based in
+        Manchester, England, that competes in the Premier League, the top flight
+        of English football.
+
+        <strong class="club">Mens football club</strong>
+
+        Founded in 1880 as St. Mark's (West Gorton), they became Ardwick
+        Association Football Club in 1887 and Manchester City in 1894. The
+        club's home ground is the City of Manchester Stadium in east Manchester,
+        to which they moved in 2003, having played at Maine Road since 1923.
+        Manchester City adopted their sky blue home shirts in 1894, the first
+        season with the current name. Over the course of its history, the club
+        has won nine league titles, seven FA Cups, eight League Cups, six FA
+        Community Shields, one UEFA Champions League, one European Cup Winners'
+        Cup, one UEFA Super Cup, and one FIFA Club World Cup.
+        <a href="https://en.wikipedia.org/wiki/Manchester_City_F.C.">
+          Learn more on wikipedia
+        </a>
+
+        <strong class="club">Womens football club</strong>
+
+        Manchester City Ladies Football Club was formed in November 1988, the
+        brainchild of Manchester City Community Officer Neil Mather – who would
+        become the side's first manager – plus several others involved in the
+        club's community scheme. Their first match was a friendly against Oldham
+        on Boundary Park's artificial pitch, which City won by a score of 4–1.
+        Only able to play friendlies in their first season due to the late
+        formation of the club, the team joined the North West Women's Regional
+        Football League the following year. In the hopes of increasing publicity
+        for women's football, the Manchester City's men's first team defender
+        Colin Hendry was appointed Club President in March 1990 during a period
+        when it was receiving plaudits for being one of the first league clubs
+        in north-west England to create an affiliated women's side.
+        <a href="https://en.wikipedia.org/wiki/Manchester_City_W.F.C.">
+          Learn more on wikipedia
+        </a>
+        <br />
+        You can also learn more on the official
+        <em
+          ><a href="https://www.mancity.com/"> Manchester City website </a></em
+        >
+      </p>
+      <div class="buy">
+        <strong>
+          Do you want to buy a shirt of the best team in the world?</strong
+        >
+        <button>YES</button>
+      </div>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address");
+        let age = prompt("How old are you?");
+        if (age < 18) {
+          alert(
+            "Sorry " +
+              name +
+              " you are to young to buy,but you can ask your parents to buy it for you"
+          );
+        } else {
+          alert(
+            "Thank you " +
+              name +
+              " we send you more information using your emails"
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
